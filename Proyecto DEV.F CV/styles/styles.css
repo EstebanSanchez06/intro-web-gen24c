@@ -6,8 +6,47 @@ html{
 
 .Bienvenida{
     display: grid;
-    grid-template-columns: repeat(2,minmax(300px,500px));
-    grid-template-rows: 200px;
+    grid-template-columns:repeat(2,minmax(300px,1fr));
+    grid-auto-rows: 400px;
     justify-content: center;
+    row-gap: 10px;
 }
 
+.Bienvenida-boton{
+    background-color: #48cae4;
+    border: none;
+    border-radius:5%;
+    width: 250px;
+    height:40px;
+    color: #ffffff;
+    font-size: 20px;
+    
+}
+.Bienvenida-Imagen{
+    display: flex;
+}
+.Bienvenida-Imagen img{
+    border-radius: 5%;
+    height: 100%;
+}
+
+.Bienvenida-datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.Bienvenida-title{
+    font-family:Rale;
+}
+
+@media screen and (max-width:600px){
+    
+.Bienvenida{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
