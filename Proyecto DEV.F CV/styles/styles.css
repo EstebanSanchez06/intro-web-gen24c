@@ -1,0 +1,13 @@
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.Bienvenida{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(300px,500px));
+    grid-template-rows: 200px;
+    justify-content: center;
+}
+
