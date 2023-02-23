@@ -2,8 +2,64 @@ html{
     margin: 0;
     padding: 0;
     border: 0;
+    font-size: 62.5%;
     background-color: #f5f7fa;
 }
+
+nav{
+    margin-top: 5rem;
+    height: 10rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-derecha{
+    display: flex;
+    justify-content: space-around;
+}
+.derecha-item{
+    font-size: 3rem;
+    margin-right: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.nav-izquierda{
+    display: flex;
+    margin-left: 1rem;
+    justify-content: space-between;
+}
+.izquierda-item{
+    font-size: 3rem;
+}
+.encontrar-CV{
+    font-family: 'Noto Sans', sans-serif;
+}
+.iniciar-sesion{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #00b4d8;
+    color: #ffffff;
+    height: 6rem;
+    width: 23rem;
+    justify-content: center;
+    align-content: center;
+    border-radius: 25px;
+}
+.iniciar-sesion:hover{
+    background-color: #ffb703;
+    cursor: pointer;
+}
+.encontrar-CV:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
 
 .Bienvenida{
     display: flex;
@@ -23,12 +79,11 @@ html{
     width: 320px;
     height:59px;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 2rem;
     justify-content: center;
     font-family:'Poppins', sans-serif;
     letter-spacing: 1px;
     text-shadow: 0 0 0 rgb(0 0 0 / 0%);
-    font-size: 1.125rem;
     text-transform: uppercase;
     font-weight: 700;
     
@@ -63,7 +118,189 @@ html{
 }
 .Bienvenida-descripcion{
     font-family:'Poppins', sans-serif;
-    font-size: 30px;
+    font-size: 2.8rem;
     display: flex;
     object-fit: contain;
+}
+
+
+
+.Info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Info-container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Info-title{
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+     margin-top: 100px;
+    font-family:'Noto Sans Bamum', sans-serif;
+    font-size: 3rem;
+}
+.Info-informacion{
+    background-color: #25ced1;
+    border-radius: 25px;
+    border: none;
+    height: 81rem;
+    width:50rem;
+    display: flex;
+    flex-direction: column;
+    text-justify: center;
+    text-align: left;
+}
+
+.Info-informacion .item span{
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family:'Poppins', sans-serif;
+    color: #2667ff;
+    
+} 
+.Info-informacion .item{
+    padding-top: 2px;
+    padding-left: 10px;
+}
+.Info-informacion .item h4{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family:'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #ffffff;
+    margin-bottom: 1.6rem;
+
+}
+
+
+
+.Social-botones-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+}
+.Social-botones-boton{
+    border: none;
+    height: 8rem;
+    width: 8rem;
+    background-color: transparent;
+    font-size: 5rem;
+}
+.Social-botones-boton:hover{
+    font-size: 9rem ;
+    cursor: pointer;
+}
+
+
+
+
+.Info-grid{
+    display: grid;
+    grid-template-areas:
+    "uno dos" 
+    "tres cuatro";
+    grid-template-columns: repeat(auto-fit,minmax(200px,200px));
+    grid-template-rows: 200px 200px;
+    gap: 32px;
+}
+
+.item-1{
+    grid-area: uno;
+    background-color: none;
+}
+.item-2{
+    grid-area: dos;
+    background-color: none;
+}
+
+.item-3{
+    grid-area: tres;
+    background-color: none;
+}
+
+.item-4{
+    grid-area: cuatro;
+    background-color: none;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-item h5{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #2667ff;
+    margin-bottom: none;
+    text-align: center;
+}
+
+.grid-item h6{
+    font-size: 7.2rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    color: #3b28cc;
+    text-align: center;
+}
+
+
+
+
+.Info-container2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.Info-explicacion-boton{
+    background-color: #48cae4;
+    border: none;
+    border-radius:5%;
+    width: 320px;
+    height:59px;
+    color: #ffffff;
+    font-size: 2rem;
+    justify-content: center;
+    font-family:'Poppins', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0 0 0 rgb(0 0 0 / 0%);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0.8rem;
+}
+.Info-explicacion-boton:hover{
+    background-color: #6e44ff;
+    cursor: pointer;
+}
+
+.Info-explicacion-titulo{
+    font-size: 3.6rem;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: #2667ff;
+}
+.Info-explicacion-parrafo{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #2667ff;
+
 }
