@@ -240,7 +240,7 @@ nav{
 .grid-item h5{
     letter-spacing: 3px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 550;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     color: #2667ff;
@@ -304,3 +304,53 @@ nav{
     color: #2667ff;
 
 }
+.Proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Fotos-Videos{
+    display: flex;
+    width: 80%;
+    height: 600px;
+    align-self: center;
+}
+.Fotos-Videos img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.Fotos-Videos iframe{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    height: 100%;
+}
+
+.Fotos-Videos img:hover{
+    cursor: crosshair;
+    width: 90%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.Fotos-Videos iframe:hover{
+    cursor: crosshair;
+    width: 90%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.Proyectos-title{
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 50px;
+     margin-top: 100px;
+    font-family:'Noto Sans Bamum', sans-serif;
+    font-size: 3rem;
+    flex-grow: 1;
+    text-align: center;
+   }
