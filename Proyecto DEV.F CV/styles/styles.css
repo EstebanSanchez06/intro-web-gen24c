@@ -63,10 +63,9 @@ nav{
 
 .Bienvenida{
     display: flex;
+   column-gap: 20px;
    flex-wrap: wrap;
    justify-content: center;
-   position: relative;
-   column-gap: 20px;
 }
 .Bienvenida-seccion-boton{
     display: flex;
@@ -94,11 +93,14 @@ nav{
 }
 .Bienvenida-Imagen{
     height: 100vh;
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 .Bienvenida-Imagen img{
     border-radius: 5%;
-    height: 100vh;
+    height: 90vh;
+    width: fit-content;
+    display: flex;
 }
 
 .Bienvenida-datos{
@@ -207,8 +209,8 @@ nav{
     grid-template-areas:
     "uno dos" 
     "tres cuatro";
-    grid-template-columns: repeat(auto-fit,minmax(200px,200px));
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px,200px;
+    grid-template-rows: 200px 200px ;
     gap: 32px;
 }
 
@@ -269,7 +271,11 @@ nav{
 
 
 
-
+.Info-explicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .Info-explicacion-boton{
     background-color: #48cae4;
     border: none;
@@ -308,41 +314,32 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
+    
 }
 .Fotos-Videos{
     display: flex;
-    width: 80%;
-    height: 600px;
-    align-self: center;
+    width: 100%;
+    height: 430px;
+    
 }
-.Fotos-Videos img{
+.Fotos-Videos-item{
     width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-}
-.Fotos-Videos iframe{
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
     height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
 }
 
-.Fotos-Videos img:hover{
+
+.Fotos-Videos-item:hover{
     cursor: crosshair;
     width: 90%;
     opacity: 1;
     filter: contrast(120%);
 }
-.Fotos-Videos iframe:hover{
-    cursor: crosshair;
-    width: 90%;
-    opacity: 1;
-    filter: contrast(120%);
-}
+
 
 .Proyectos-title{
     color: #333;
@@ -354,3 +351,153 @@ nav{
     flex-grow: 1;
     text-align: center;
    }
+
+
+
+
+
+
+    @media screen and (max-width:1250px){
+    .Info-grid{
+        justify-content: center;
+        width: 100%;
+    }
+    .Info-explicacion-titulo{
+        text-align: center;
+    }
+    .Info-explicacion-parrafo{
+        text-align: center;
+    }
+    .Info-explicacion-boton-contenedor{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .Bienvenida-seccion-boton{
+        justify-content: center;
+    }
+    .Bienvenida-Imagen{
+        height: 100vh;
+        margin-top: 2rem;
+    }
+}
+        
+@media screen and (max-width:1215px) {
+    .Bienvenida-seccion-boton{
+        justify-content: center;
+    }
+        .Bienvenida-Imagen{
+            height: 100vh;
+            margin-top: 2rem;
+            margin-left: 40px;
+            
+        }
+}
+@media screen and (max-width:690px){
+    nav{
+        display: none;
+    }
+    .Bienvenida-Imagen{
+        width: 100vw;
+    }
+    .Info-grid{
+        display: grid;
+        grid-template-areas:
+        "uno" 
+        "dos"
+        "tres"
+        "cuatro";
+        grid-template-columns: repeat(auto-fit,minmax(200px,200px));
+        grid-auto-rows: 200px ;
+        gap: 32px;
+    }
+    .Fotos-Videos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 430px;
+        
+    }
+    .Fotos-Videos-item{
+        width: 100%;
+        height: 0;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+    }
+    
+    
+    .Fotos-Videos-item:hover{
+        cursor: crosshair;
+        height: 90%;
+        width: 100%;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    
+}
+@media screen and (max-width:520px) {
+    .Info-explicacion-titulo{
+        font-size: 2rem;
+    }
+    .Info-explicacion-parrafo{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:500px) {
+    
+    .Bienvenida-title{
+        font-family:'Noto Sans', sans-serif;;
+        font-size: 72px;
+        display: flex;
+        height: 240px;
+        color: #0077b6;
+    
+    }
+    .Bienvenida-descripcion{
+        font-family:'Poppins', sans-serif;
+        font-size: 2rem;
+        display: flex;
+        object-fit: contain;
+    }
+    .Bienvenida-Imagen img{
+        height: 80%;
+        width: 100%;
+    }
+}
+@media screen and (max-width:475px) {
+    .Bienvenida-Imagen{
+        justify-content: center;
+    }
+    .Bienvenida-Imagen img{
+        height: 80vh;
+    }
+}
+@media screen and (max-width:415px) {
+    .Bienvenida-title{
+        font-family:'Noto Sans', sans-serif;;
+        font-size: 65px;
+        display: flex;
+        height: 240px;
+        color: #0077b6;
+        text-align: center;
+    
+    }
+    .Bienvenida-datos{
+        margin-left: 40px;
+    }
+    .Bienvenida-descripcion{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:400px){
+    .Bienvenida-Imagen{
+        margin-left: 50px;
+    }
+    .Bienvenida-Imagen img{
+        width: max-content;
+    }
+}
